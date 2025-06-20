@@ -13,7 +13,7 @@ bool Overcoat::operator==(const Overcoat& other) {
 }
 
 Overcoat& Overcoat::operator=(const Overcoat& other) {
-	if (this != &other) { // Check for self-assignment
+	if (this != &other) {
 		strncpy_s(this->type, other.type, MAX_TYPE_LENGTH - 1);
 		this->type[MAX_TYPE_LENGTH - 1] = '\0';
 		this->price = other.price;
